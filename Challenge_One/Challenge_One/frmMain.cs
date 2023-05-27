@@ -68,8 +68,13 @@ namespace Challenge_One
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            this.tbxAmount.Enabled = this.tbxGames.Enabled = true;
+            this.arrPrices = null;
+            this.amount = this.gamesCount = 0;
             this.tbxAmount.Value = this.tbxGames.Value = this.tbxPrice.Value = null;
+            
+            this.tbxAmount.Enabled = this.tbxGames.Enabled = true;
+            this.btnSetAmount.Enabled = this.btnSetGames.Enabled = true;
+            this.tbxPrice.Enabled = this.btnAdd.Enabled = false;          
             this.tPanel_01_Numbers.Controls.Clear();
         }
 
@@ -107,7 +112,7 @@ namespace Challenge_One
                 return;
             }
 
-            this.tbxAmount.Enabled = false;
+            this.tbxAmount.Enabled = this.btnSetAmount.Enabled = false;
         }
 
         private void setGamesCount()
@@ -126,8 +131,8 @@ namespace Challenge_One
 
             try
             {
-                this.tbxGames.Enabled = false;
                 this.arrPrices = new int[gamesCount];
+                //Add labels to table layout panel
                 for (int i = 0; i < gamesCount; i++)
                 {
                     RadLabel lblEmpty = new RadLabel()
@@ -141,7 +146,9 @@ namespace Challenge_One
                     lblEmpty.TextAlignment = ContentAlignment.MiddleCenter;
                     this.tPanel_01_Numbers.Controls.Add(lblEmpty);
                 }
-                this.tbxGames.Enabled = false;
+                this.tbxGames.Enabled = this.btnSetGames.Enabled = false;
+                this.tbxPrice.Enabled = this.btnAdd.Enabled = true;
+                this.tbxPrice.Focus();
             }
             catch (Exception ex)
             {
@@ -157,6 +164,7 @@ namespace Challenge_One
                 this.tbxPrice.Focus();
                 return;
             }
+            //Detect illegal input
             if (!int.TryParse(this.tbxPrice.Text, out int _newPrice) || _newPrice <= 0)
             {
                 HelperUI.ErrorMsg("Invalid Input");
@@ -174,6 +182,7 @@ namespace Challenge_One
 
             try
             {
+                //Display inputed price and put them into array
                 var _lblEmpty = this.tPanel_01_Numbers.Controls.OfType<RadLabel>()
                     .FirstOrDefault(x => x.Text == string.Empty);
                 _lblEmpty.Text = _newPrice.ToString();

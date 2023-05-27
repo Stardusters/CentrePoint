@@ -81,10 +81,10 @@
             // btnSetGames
             // 
             this.btnSetGames.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSetGames.Location = new System.Drawing.Point(369, 99);
-            this.btnSetGames.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
+            this.btnSetGames.Location = new System.Drawing.Point(374, 104);
+            this.btnSetGames.Margin = new System.Windows.Forms.Padding(24, 24, 24, 24);
             this.btnSetGames.Name = "btnSetGames";
-            this.btnSetGames.Size = new System.Drawing.Size(116, 42);
+            this.btnSetGames.Size = new System.Drawing.Size(106, 32);
             this.btnSetGames.TabIndex = 10;
             this.btnSetGames.Text = "Set";
             this.btnSetGames.ThemeName = "Crystal";
@@ -94,12 +94,12 @@
             // 
             this.tbxGames.AutoSize = false;
             this.tbxGames.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbxGames.Location = new System.Drawing.Point(8, 88);
-            this.tbxGames.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.tbxGames.Location = new System.Drawing.Point(10, 90);
+            this.tbxGames.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.tbxGames.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbxGames.Name = "tbxGames";
             this.tbxGames.NullText = "Step 2: Input numbers of games (N)";
-            this.tbxGames.Size = new System.Drawing.Size(334, 64);
+            this.tbxGames.Size = new System.Drawing.Size(330, 60);
             this.tbxGames.TabIndex = 5;
             this.tbxGames.TabStop = false;
             this.tbxGames.Text = "0";
@@ -111,12 +111,13 @@
             // 
             this.tbxPrice.AutoSize = false;
             this.tbxPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbxPrice.Location = new System.Drawing.Point(8, 168);
-            this.tbxPrice.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.tbxPrice.Enabled = false;
+            this.tbxPrice.Location = new System.Drawing.Point(10, 170);
+            this.tbxPrice.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.tbxPrice.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbxPrice.Name = "tbxPrice";
             this.tbxPrice.NullText = "Step 3: Input Price Here";
-            this.tbxPrice.Size = new System.Drawing.Size(334, 64);
+            this.tbxPrice.Size = new System.Drawing.Size(330, 60);
             this.tbxPrice.TabIndex = 15;
             this.tbxPrice.TabStop = false;
             this.tbxPrice.Text = "0";
@@ -145,10 +146,10 @@
             // 
             // btnSetAmount
             // 
-            this.btnSetAmount.Location = new System.Drawing.Point(365, 15);
-            this.btnSetAmount.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.btnSetAmount.Location = new System.Drawing.Point(369, 19);
+            this.btnSetAmount.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
             this.btnSetAmount.Name = "btnSetAmount";
-            this.btnSetAmount.Size = new System.Drawing.Size(124, 50);
+            this.btnSetAmount.Size = new System.Drawing.Size(116, 42);
             this.btnSetAmount.TabIndex = 0;
             this.btnSetAmount.Text = "Set";
             this.btnSetAmount.ThemeName = "Crystal";
@@ -156,10 +157,11 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(369, 179);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
+            this.btnAdd.Enabled = false;
+            this.btnAdd.Location = new System.Drawing.Point(374, 184);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(24, 24, 24, 24);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(116, 42);
+            this.btnAdd.Size = new System.Drawing.Size(106, 32);
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Add";
             this.btnAdd.ThemeName = "Crystal";
@@ -167,10 +169,10 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(369, 259);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
+            this.btnCalculate.Location = new System.Drawing.Point(374, 264);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(24, 24, 24, 24);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(116, 106);
+            this.btnCalculate.Size = new System.Drawing.Size(106, 96);
             this.btnCalculate.TabIndex = 25;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.ThemeName = "Crystal";
@@ -178,10 +180,10 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(369, 403);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
+            this.btnReset.Location = new System.Drawing.Point(374, 408);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(24, 24, 24, 24);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(116, 42);
+            this.btnReset.Size = new System.Drawing.Size(106, 32);
             this.btnReset.TabIndex = 30;
             this.btnReset.Text = "Reset";
             this.btnReset.ThemeName = "Crystal";
@@ -191,12 +193,12 @@
             // 
             this.tbxAmount.AutoSize = false;
             this.tbxAmount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbxAmount.Location = new System.Drawing.Point(6, 6);
-            this.tbxAmount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbxAmount.Location = new System.Drawing.Point(8, 8);
+            this.tbxAmount.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.tbxAmount.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.tbxAmount.Name = "tbxAmount";
             this.tbxAmount.NullText = "Step 1: Input Amount Here (K)";
-            this.tbxAmount.Size = new System.Drawing.Size(338, 68);
+            this.tbxAmount.Size = new System.Drawing.Size(334, 64);
             this.tbxAmount.TabIndex = 35;
             this.tbxAmount.TabStop = false;
             this.tbxAmount.Text = "0";
