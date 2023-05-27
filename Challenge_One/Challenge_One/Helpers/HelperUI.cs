@@ -120,5 +120,4 @@ namespace Visitor_Login.Helpers
             }
         }
     }
-
 }
